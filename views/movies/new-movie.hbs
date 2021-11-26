@@ -1,0 +1,23 @@
+<div>
+    <h2>Add a new movie</h2>
+    <br/>
+    <form action="/movies/create" method="POST" enctype="multipart/form-data">
+        <label for="title">Title</label>
+        <input type="text" name="title" />
+        <hr>
+        <label for="genre">Genre</label>
+        <input type="text" name="genre" />
+        <hr>
+        <label for="plot">Plot</label>
+        <input type="text" name="plot" />
+        <hr>
+        {{!-- <label for="cast">Cast</label>
+        <select name="cast" id="celebrity" multiple>
+           <option value="{{celebrity.name}}">{{each celebrity}}</option> 
+        </select> --}}
+        
+        <hr>
+        <button type="submit">Add</button>
+    </form>
+
+</div>
